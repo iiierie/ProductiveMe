@@ -3,6 +3,7 @@
   "name": "ProductiveMe",
   "author": "sandesh.cdr@gmail.com",
   "version": "1.0",
+ "description": "ProductiveMe allows you to type the topic or thing you want to study and set a timer for how many minutes you want to study. It uses LLMs and during this time, only allows access to websites related to that topic and blocks irrelevant webpages, helping you stay focused and productive.",
   "permissions": [
     "tabs",
     "declarativeNetRequest",
@@ -13,8 +14,13 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icons/icon.png"
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon16.png",
+    "128": "icons/icon16.png"
   },
   "declarative_net_request": {
     "rule_resources": [
