@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "ProductiveMe",
+  "author": "sandesh.cdr@gmail.com",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "declarativeNetRequest",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
