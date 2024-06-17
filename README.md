@@ -19,7 +19,7 @@ ProductiveMe is a Chrome extension designed to help you stay focused and product
 
 1. Clone this repository to your local machine.
    ```sh
-   git clone https://github.com/yourusername/ProductiveMe.git
+   git clone https://github.com/iiierie/ProductiveMe.git
    ```
 2. Open Chrome and navigate to chrome://extensions/.
 3. Enable "Developer mode" by toggling the switch in the top-right corner.
